@@ -4,18 +4,18 @@ var controller = new ScrollMagic.Controller();
 // Scene Top
 var sceneTop = new ScrollMagic.Scene({
         triggerElement: "#triggerTop",
-        duration: 300,
-        offset: -10
+        duration: 600,
+        offset: -72
     })
+    .addIndicators()
     .setTween(tween)
-    //  .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 console.log(controller);
 // build Business
 var sceneBussines = new ScrollMagic.Scene({
         triggerElement: "#triggerBusiness",
         duration: 40,
-        offset: 200
+        offset: 300
     })
     .setTween(tweenBussiness)
     // .addIndicators() // add indicators (requires plugin)
@@ -25,7 +25,7 @@ var sceneBussines = new ScrollMagic.Scene({
 var sceneTrans = new ScrollMagic.Scene({
         triggerElement: "#triggerTrans",
         duration: 300,
-        offset: 0
+        offset: 40
     })
     .setTween(tweenTrans)
     // .addIndicators() // add indicators (requires plugin)
